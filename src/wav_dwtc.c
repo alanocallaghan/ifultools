@@ -1375,7 +1375,7 @@ mutil_errcode wavuniv_transform_packet_inverse(
   sint32         parent_osc;
   sint32_mat     isort;
   univ_mat      *parent;
-  sint32         p;
+  sint32         p = 0;
   boolean        append_extra;
   boolean        any_extra;
 
