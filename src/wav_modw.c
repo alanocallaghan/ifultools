@@ -791,8 +791,8 @@ mutil_errcode wavuniv_transform_packet_detail(
      i.e. we need to access the stored extra
      scaling coefficients in reverse order. */
 
+  pd_extra = transform->mats[ transform->nelem - 1 ].mat.dblmat.data ;
   if ( is_dwt & ( n_extra > 0 ) ){
-
     pd_extra =
       transform->mats[ transform->nelem - 1 ].mat.dblmat.data +
       n_extra - 1;

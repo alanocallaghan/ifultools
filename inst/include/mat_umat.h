@@ -268,7 +268,8 @@ Macros for universal matrices
  */
 #define MATUNIV_CHECK_TYPE( mat1, mat2 )  \
         ( mat1 && mat2 && ( (mat1)->type == (mat2)->type) )
-
+#define MATUNIV_CHECK_TYPE2( mat1, mat2 )  \
+        ( mat2 && ( (mat1)->type == (mat2)->type) )
 
 /** Extract an element from a universal matrix given the data index.
  * Casts the value returned to double.
