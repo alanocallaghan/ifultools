@@ -14,6 +14,8 @@ Description: Insightful Research Tools is a collection of signal processing,
   language for speed and efficency. The routines were originally developed at
   Insightful for use in S-PLUS. 
 License: GPL-2
+URL: https://github.com/spkaluzny/ifultools
+BugReports: https://github.com/spkaluzny/ifultools/issues
 Collate:
   it_mutils.R
   it_plot.R
