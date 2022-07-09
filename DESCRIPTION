@@ -3,7 +3,8 @@ Title: Insightful Research Tools
 Version: 2.0-24
 Authors@R: c(person(given = "William", family = "Constantine", role = "aut"),
   person(given = "Stephen", family = "Kaluzny", role = c("aut", "cre"),
-    email = "spkaluzny@gmail.com"))
+    email = "spkaluzny@gmail.com"),
+    person("R Core Team", role = "ctb"))
 Depends: R (>= 3.0.2)
 Imports:
   MASS,
