@@ -28,11 +28,12 @@
 
 #include <R_ext/Error.h>	/* for error and warning */
 
-#ifdef STRICT_R_HEADERS
-#undef STRICT_R_HEADERS
-#endif
+// #ifdef STRICT_R_HEADERS
+// #undef STRICT_R_HEADERS
+// #endif
 
-#ifndef STRICT_R_HEADERS
+// #ifndef STRICT_R_HEADERS
+#ifndef PROBLEM
 
 #define R_PROBLEM_BUFSIZE	4096
 /* Parentheses added for FC4 with gcc4 and -D_FORTIFY_SOURCE=2 */
