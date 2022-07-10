@@ -28,9 +28,9 @@
 
 #include <R_ext/Error.h>	/* for error and warning */
 
-// #ifdef STRICT_R_HEADERS
-// #undef STRICT_R_HEADERS
-// #endif
+#ifdef STRICT_R_HEADERS
+#undef STRICT_R_HEADERS
+#endif
 
 // #ifndef STRICT_R_HEADERS
 #ifndef PROBLEM

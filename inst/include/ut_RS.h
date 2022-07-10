@@ -58,6 +58,8 @@ it is defined */
 #include "mat_type.h"
 #include "sig_type.h"
 
+
+/* Added for R-4.2.0 as PROBLEM/ERROR macros were dropped from R */
 #include "r_S_Error.h"
 
 /** R PROBLEM/ERROR messaging for the err message returned
