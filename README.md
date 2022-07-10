@@ -8,7 +8,7 @@ C Code for wmtsa, fractal and sapa R packages
 
 You can install the latest released version from CRAN with:
 ```r
-installpackages("ifultools")
+install.packages("ifultools")
 ```
 
 Install the latest development version from GitHub with:
