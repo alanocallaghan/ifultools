@@ -12,7 +12,7 @@ Imports:
   splus2R (>= 1.2-0)
 Description: Insightful Research Tools is a collection of signal processing,
   image processing, and time series modeling routines written in the C
-  language for speed and efficency. The routines were originally developed at
+  language for speed and efficiency. The routines were originally developed at
   Insightful for use in S-PLUS. 
 License: GPL-2
 URL: https://github.com/spkaluzny/ifultools
