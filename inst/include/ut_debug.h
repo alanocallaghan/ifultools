@@ -185,7 +185,7 @@ MUTIL_WRAPEXPORT void mutil_msg_print_time( boolean show_time );
  * @library wrap
  * @usage #mutil_abort();#
  */
-MUTIL_WRAPEXPORT void mutil_abort();
+MUTIL_WRAPEXPORT void mutil_abort(void);
 
 
 #ifdef DEBUG
