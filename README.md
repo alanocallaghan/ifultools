@@ -10,12 +10,9 @@ at Insightful for use in S-PLUS.
 
 ### Installation
 
-You can install the latest released version from CRAN with:
-```r
-install.packages("ifultools")
-```
+ifultools was removed from CRAN and archived on 2023-02-11.
 
-Install the latest development version from GitHub with:
+You can install the latest version from GitHub with:
 ```r
 # install.packages("devtools")
 devtools::install_github("spkaluzny/ifultools")
