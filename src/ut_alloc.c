@@ -110,7 +110,7 @@ mutil_errcode mutil_realloc( void **data, sint32 new_size, sint32 old_size )
 //  *data = (void *) R_chk_realloc( (void *) *data, (size_t) new_size );
 
 //  #define Realloc(p,n,t) (t *) R_chk_realloc( (void *)(p), (size_t)((n) * sizeof(t)) )
-  *data = (void *) (Realloc( *data, new_size, int ));
+  *data = (void *) (realloc( *data, new_size, int ));
 
   if( !*data ){
     MUTIL_ERROR("Realloc failed");
@@ -142,7 +142,7 @@ mutil_errcode mutil_free( void *data, sint32 old_size )
 
   pdata = (char *) data;
 
-  Free( pdata );
+  free( pdata );
 
   MUTIL_TRACE("Done with mutil_free()");
   return MUTIL_ERR_OK;
