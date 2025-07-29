@@ -110,7 +110,7 @@ mutil_errcode mutil_realloc( void **data, sint32 new_size, sint32 old_size )
 //  *data = (void *) R_chk_realloc( (void *) *data, (size_t) new_size );
 
 //  #define Realloc(p,n,t) (t *) R_chk_realloc( (void *)(p), (size_t)((n) * sizeof(t)) )
-  *data = (void *) (realloc( *data, new_size, sizeof(int) ));
+  *data = (void *) (realloc( *data, new_size));
 
   if( !*data ){
     MUTIL_ERROR("Realloc failed");
