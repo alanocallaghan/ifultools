@@ -44,9 +44,9 @@ mutil_errcode mutil_malloc( sint32 size, void **data )
   /* S_alloc's memory cleanup is controlled by R */
   /* *data  = (void *) S_alloc( size, 1 );      */
   //*data = (void *) R_chk_calloc( (size_t) size, (size_t) 1 );
-  *data = (void *) (Calloc(size, int));
+  *data = (void *) (calloc(size, int));
   if( !*data ){
-    MUTIL_ERROR("Calloc failed");
+    MUTIL_ERROR("calloc failed");
     return MUTIL_ERR_MEM_ALLOC;
   }
 
