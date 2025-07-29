@@ -44,7 +44,7 @@ mutil_errcode mutil_malloc( sint32 size, void **data )
   /* S_alloc's memory cleanup is controlled by R */
   /* *data  = (void *) S_alloc( size, 1 );      */
   //*data = (void *) R_chk_calloc( (size_t) size, (size_t) 1 );
-  *data = (void *) (calloc(size, int));
+  *data = (void *) (calloc(size, (size_t)1));
   if( !*data ){
     MUTIL_ERROR("calloc failed");
     return MUTIL_ERR_MEM_ALLOC;
@@ -110,7 +110,7 @@ mutil_errcode mutil_realloc( void **data, sint32 new_size, sint32 old_size )
 //  *data = (void *) R_chk_realloc( (void *) *data, (size_t) new_size );
 
 //  #define Realloc(p,n,t) (t *) R_chk_realloc( (void *)(p), (size_t)((n) * sizeof(t)) )
-  *data = (void *) (realloc( *data, new_size, int ));
+  *data = (void *) (realloc( *data, new_size, sizeof(int) ));
 
   if( !*data ){
     MUTIL_ERROR("Realloc failed");
